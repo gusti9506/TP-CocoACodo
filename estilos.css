@@ -1,0 +1,101 @@
+:root {
+	--CardFontSizeP: calc(3px + 1vw);
+	--CardFontSizeA: calc(5px + 1.25vw);
+	--CardFontSizeB: calc(5px + 1.5vw);
+	--CardFontSizeH3: calc(5px + 2vw);
+	--CardWidth: calc(100vw * 30/132);
+}
+
+body {
+  
+	background-size: 100%;
+
+}
+
+nav {
+    background-color: rgb(72, 76, 77);
+}
+
+.card{
+    padding-block: 0px;
+}
+
+.color{
+    color: green;
+}
+
+a {
+    text-align:justify;
+}
+
+#descript{
+    color: grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#fondo{
+    background-color:rgb(54, 54, 56);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.button {
+    padding: 0 20;
+    padding-bottom: 90px;
+    font-weight: bold;
+
+}
+
+.botoncitos{
+
+    height: 1.2rem;
+    width: 5.2rem;
+    padding-top: 0px;
+    font-weight: bold;
+    text-align: start;
+}
+.botoncitos2{
+    height: 1.2rem;
+    padding-top: 0px;
+    font-weight: bold;
+    text-align: start;
+    color: white;
+}
+
+.botoncitos3{
+    height: 1.2rem;
+    padding-top: 0px;
+    font-weight: bold;
+    text-align: start;
+    color: white;
+}
+.botoncitos4{
+    height: 1.2rem;
+    padding-top: 0px;
+    font-weight: bold;
+    text-align: start;
+    color: white;
+}
+
+.datos{  
+    padding-bottom: 10px;
+}
+
+#nombre{
+    padding-right: 10px;
+}
+
+#apellido{
+    padding-left: 50px;
+}
+
+#comentario{
+    padding-bottom: 10px;
+}
+
+#texto{
+    padding-left: 237px;
+    font-size: small;
+}
