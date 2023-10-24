@@ -6,14 +6,17 @@
 	--CardWidth: calc(100vw * 30/132);
 }
 
-body {
-  
-	background-size: 100%;
-
-}
-
 nav {
     background-color: rgb(72, 76, 77);
+    height: 70px;
+}
+
+body {  
+	background-size: 100%;
+}
+
+.oradores {
+    padding: 10px 0px;
 }
 
 .card{
@@ -28,10 +31,12 @@ a {
     text-align:justify;
 }
 
+
 #descript{
     color: grey;
     padding-top: 10px;
     padding-bottom: 10px;
+
 }
 
 #fondo{
@@ -40,38 +45,44 @@ a {
     padding-bottom: 10px;
 }
 
-
-.button {
-    padding: 0 20;
-    padding-bottom: 90px;
-    font-weight: bold;
-
+.btn-primary:hover{
+    background: blue;
 }
 
-.botoncitos{
+.card {
+    width: 16rem;
+}
 
+.card-img-top{
+    height: 15rem;
+}
+
+.btn_js{
     height: 1.2rem;
-    width: 5.2rem;
+    width: 5rem;
     padding-top: 0px;
+    font-size: 7.5pt;
     font-weight: bold;
     text-align: start;
 }
-.botoncitos2{
+.btn_react{
+    height: 1.2rem;
+    width: 3.3rem;
+    padding-top: 0px;
+    font-size: 7.5pt;
+    font-weight: bold;
+    text-align: start;
+    color: white;
+}
+
+.btn_negocios{
     height: 1.2rem;
     padding-top: 0px;
     font-weight: bold;
     text-align: start;
     color: white;
 }
-
-.botoncitos3{
-    height: 1.2rem;
-    padding-top: 0px;
-    font-weight: bold;
-    text-align: start;
-    color: white;
-}
-.botoncitos4{
+.btn_start{
     height: 1.2rem;
     padding-top: 0px;
     font-weight: bold;
@@ -81,6 +92,14 @@ a {
 
 .datos{  
     padding-bottom: 10px;
+}
+
+#portada {
+    filter: brightness(0.6);
+}
+
+#baires {
+    filter: brightness(1.5);
 }
 
 #nombre{
@@ -96,6 +115,6 @@ a {
 }
 
 #texto{
-    padding-left: 237px;
+    padding-left: 256px;
     font-size: small;
 }
