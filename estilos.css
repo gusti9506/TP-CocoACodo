@@ -6,12 +6,13 @@
 	--CardWidth: calc(100vw * 30/132);
 }
 
+
 #navbar-top {
     background-color: #303a44; 
 }
 
 body {  
-	/*background-size: 100%;*/
+	background-size: 100%;
 }
 
 .oradores {
@@ -125,6 +126,8 @@ a {
 
 #baires {
     filter: brightness(1.5);
+    max-height: 50%;
+    padding-top: 20%;
 }
 
 #nombre{
