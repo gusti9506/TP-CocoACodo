@@ -47,7 +47,7 @@
     <section class="container mt-2 mb-2" style="width: 52.5%;">
         <div class="row justify-content-around" >
             <div class="col-sm-3" style="border:2px solid DodgerBlue;">
-                <div class="text-center">
+                <div class="text-center justify-content-center" >
                     <h5 class="fw-bolder">Estudiante</h5>
                     <p>Tiene un descuento</p>
                     <p class="fw-bold">80%</p>
@@ -56,7 +56,7 @@
             </div>
 
             <div class="col-sm-3" style="border:2px solid MediumSeaGreen;">
-                <div class="text-lg-center">
+                <div class="text-center justify-content-center">
                     <h5 class="fw-bolder">Trainee</h5>
                     <p>Tiene un descuento</p>
                     <p class="fw-bold">50%</p>
@@ -65,7 +65,7 @@
             </div>
 
             <div class="col-sm-3" style="border:2px solid rgb(185, 218, 2);">
-                <div class="text-center">
+                <div class="text-center justify-content-center">
                     <h5 class="fw-bolder">Junior</h5>
                     <p>Tiene un descuento</p>
                     <p class="fw-bold">15%</p>
@@ -81,22 +81,25 @@
     </div>
 
     <div class="container  mb-2" style="width: 50%;">
-        <form class="row g-3 mt-2 mb-3 justify-content-around" id="formulario">
+        <form class="row g-3 mt-2 mb-3" id="formulario">
             <div class="col-sm-6">
-                <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                <span></span>
             </div>
             <div class="col-sm-6">
-                <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+                <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                <span></span>
             </div>
-            <div class="col-12">
-                <input type="email" class="form-control" id="correo" placeholder="Correo" required>
+            <div class="col-sm-12">
+                <input type="email" class="form-control" id="correo" placeholder="Correo">
+                <span></span>
             </div>
-            <div class="col-6">
+            <div class="col-sm-6">
                 <label for="cantidad" class="form-label">Cantidad</label>
                 <input type="number" class="form-control" id="cantidad" placeholder="Cantidad">
             </div>
 
-            <div class="col-6">
+            <div class="col-sm-6">
                 <p class="mb-2">Categorias</p>
                 <select class="form-select mt-0" id="categoria" aria-label="Default select example">
                     <option value="Estudiante" id="estudiante">Estudiante</option>
@@ -161,7 +164,7 @@
             </div>
         </nav>
     </footer>
-    <script src="./scripts.js"></script>
+    <script refer src="./scripts.js"></script>
 </body>
 
 </html>

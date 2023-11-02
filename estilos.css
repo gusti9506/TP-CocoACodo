@@ -134,8 +134,14 @@ a {
     padding-right: 10px;
 }
 
+.error{
+    color: red;
+}
+.sombraError{
+    box-shadow: 0 0 10px red;
+}
 #apellido{
-    padding-left: 50px;
+    padding-left: 10px;
 }
 
 #comentario{
