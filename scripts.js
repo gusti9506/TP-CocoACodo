@@ -2,7 +2,8 @@
 let cantidadTickets = document.getElementById('cantidad');
 let seleccionarCategoria = document.getElementById('categoria');
 
-let mailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+                
 
 let validarCamposVacios = (e) => {
     let campo = e.target;
@@ -11,7 +12,7 @@ let validarCamposVacios = (e) => {
     if ((campoVacio.trim().length === 0) || (cantidadTickets.value < 0)){
         campo.classList.add('sombraError');
         campo.nextElementSibling.classList.add('error');
-        campo.nextElementSibling.innerText = 'Debe ingresar ' + mensaje + ' que no sea 0, ni menor a 0';
+        campo.nextElementSibling.innerText = 'Debe ingresar ' + mensaje;
     } else {
         campo.classList.remove('sombraError');
         campo.nextElementSibling.classList.remove('error');
@@ -20,9 +21,10 @@ let validarCamposVacios = (e) => {
 }
 
 let validarEmail = (e) => {
+    let mailRegex = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
     let emailVacio = e.target;
     let email = e.target.value;
-    if (email.trim().length > 4 && !mailRegex.test(email)){
+    if ((!mailRegex.test(email)) || (email.trim().length === 0) || (email.trim().length < 4)){
         emailVacio.classList.add('sombraError');
         emailVacio.nextElementSibling.classList.add('error');
         emailVacio.nextElementSibling.innerText = 'Debe ingresar un Email CORRECTO!!';
@@ -36,8 +38,8 @@ let validarEmail = (e) => {
 nombre.addEventListener("blur", validarCamposVacios);
 apellido.addEventListener("blur", validarCamposVacios);
 cantidad.addEventListener("blur", validarCamposVacios);
-correo.addEventListener("blur", validarCamposVacios, validarEmail);
-//correo.addEventListener("input", validarEmail);
+correo.addEventListener("blur", validarEmail);
+
 
 cantidadTickets.addEventListener("blur", function(e) {
     let totalTickets = e.target.value;
