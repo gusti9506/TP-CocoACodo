@@ -1,0 +1,48 @@
+#navbar-top {
+    background-color: #303a44; 
+}
+
+.color{
+    color: green;
+}
+
+#nombre{
+    padding-right: 10px;
+}
+
+.error{
+    color: red;
+}
+.sombraError{
+    box-shadow: 0 0 10px red;
+}
+.activo{
+    color: black;
+    font-weight: bolder;
+    background-color: aqua;
+    padding: 20px;
+    display: none;
+}
+.activo-mensaje{
+    background-color: yellow;
+    display: block;
+}
+.resumen-error{
+    color:black;
+}
+#apellido{
+    padding-left: 10px;
+}
+
+#comentario{
+    padding-bottom: 10px;
+}
+
+#texto{
+    padding-left: 256px;
+    font-size: small;
+}
+
+#nav-footer{
+    background-color: #254253;
+}
